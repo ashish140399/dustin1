@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Tron
+	</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- bootstrap 4-->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: #1C212D;background-image: url('background.png');background-size: cover;">
+	<div style="margin: 0% 10% 5% 10%;">
+	<div class="row">
+		<div class="col-sm-2" style="color: #fff;">
+			<div style="border-left: 2px solid rgba(255,255,255,0.03);padding:80px 0px 40px 0px;" class="demo">
+				<div class="small_left_stick selecteds_div val="0"></div>
+				<!--script>
+					for (var i = 0; i < 35; i++) {
+						if(i==1)
+						{
+							text='<div class="longstick selected_div'+i+'" ></div>\
+								<div class="month_name_outer">\
+									<div class="month_name">\
+									<span>AUGUST</span>\
+									</div>\
+								</div>';
+
+						}
+						else if(i==9){
+							text='<div class="longstick selected_div'+i+'" ></div>\
+								<div class="month_name_outer">\
+									<div class="month_name">\
+									<span>SEPTEMBER</span>\
+									</div>\
+								</div>';
+						}
+						else if(i==17){
+							text='<div class="longstick selected_div'+i+'" ></div>\
+								<div class="month_name_outer">\
+									<div class="month_name">\
+									<span>OCTOBER</span>\
+									</div>\
+								</div>';
+						}
+						else if(i==25){
+							text='<div class="longstick selected_div'+i+'"></div>\
+								<div class="month_name_outer">\
+									<div class="month_name">\
+									<span>NOVEMBER</span>\
+									</div>\
+								</div>';
+						}
+						else if(i==33){
+							text='<div class="longstick selected_div'+i+'" ></div>\
+								<div class="month_name_outer">\
+									<div class="month_name">\
+									<span>DECEMBER</span>\
+									</div>\
+								</div>';
+						}
+						else{
+							text='<div class="small_left_stick selecteds_div'+i+' val="0"></div>';
+						}
+						$(".demo").append(text);
+					}
+				</script-->
+				<script>
+					for (var i = 0; i < 3; i++) {
+						if(i==0)
+						{
+							text='<div>\
+									<div class="longstick selected_div'+i+'" ></div>\
+									<div class="month_name_outer">\
+										<div class="month_name">\
+										<span>AUGUST</span>\
+										</div>\
+									</div>';
+							$(".demo").append(text);
+
+							for (j = 0; j<7; j++) {
+								text2='<div class="small_left_stick selecteds_div val="0"></div>';
+								$(".demo").append(text2);		
+							}
+							text3='</div>';
+							$(".demo").append(text3);
+						}
+						if(i==1)
+						{
+							text='<div>\
+									<div class="longstick selected_div'+i+'" ></div>\
+									<div class="month_name_outer">\
+										<div class="month_name">\
+										<span>SEPTEMBER</span>\
+										</div>\
+									</div>';
+							$(".demo").append(text);
+
+							for (j = 0; j<7; j++) {
+								text2='<div class="small_left_stick selecteds_div val="0"></div>';
+								$(".demo").append(text2);		
+							}
+							text3='</div>';
+							$(".demo").append(text3);
+						}						
+					}					
+				</script>
+				
+			</div>	
+		</div>
+		<div class="col-sm-8" style="color: #0CD6CF;background-image: radial-gradient( rgba(12, 214, 207, 0.065) 0%, rgba(12, 214, 207, 0.02) 30%, rgba(12, 214, 207, 0) 100%);">
+			<div>
+				<img src="tron_topia.png" style="width: 118px; height: 50px;margin-top: 32px">
+			</div>
+			<div>
+				<div class="d-flex justify-content-start" style="margin-top: 34px">
+					<div style="position: relative;margin-right: 21px;margin-top: 0;">
+						<div  class="bullet_outer">
+						</div>
+						<div class="bullet_inner">
+						</div>		
+					</div>
+					<div>
+						<div class="duration_name selected_div" val="0" data-month="first">AUGUST - SEPTEMBER 2019</div>
+						<div class="duration_detail"  style="margin-top: 7px">Lucky one Max Relaunch</div>
+						<div class="duration_detail">New UI launch</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Unified Dividend Panel</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Chat Upgrades</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Smoother, more fun Animations</div>
+						<div class="duration_detail">Vault launch</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Time based and truly fair FOMO game.</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-start" style="margin-top: 81px">
+					<div style="position: relative;margin-right: 21px;margin-top: 0;">
+						<div  class="bullet_outer">
+						</div>
+						<div class="bullet_inner">
+						</div>		
+					</div>
+					<div>
+						<div class="duration_name selected_div" val="0" data-month="second">SEPTEMBER - OCTOBER 2019</div>
+						<div class="duration_detail" style="margin-top: 7px">Collaborative partnership with MonsterByte</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Sportsbook</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Video Poker</div>
+						<div class="duration_detail" style="margin-top: 7px">Collaborative partnership with MonsterByte</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>PvP multiplayer based games.</div>	
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>First game "Blitz", an 8 player PvP wheel.</div>				
+					</div>
+				</div>
+				<div class="d-flex justify-content-start" style="margin-top: 64px">
+					<div style="position: relative;margin-right: 21px;margin-top: 0;">
+						<div  class="bullet_outer">
+						</div>
+						<div class="bullet_inner">
+						</div>		
+					</div>
+					<div>
+						<div class="duration_name selected_div" val="0" data-month="third">OCTOBER - NOVEMBER 2019</div>
+						<div class="duration_detail" style="margin-top: 7px">TopiaDEX Launch</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>DEX fee's will feed TOPIA dividend pool</div>
+						<div class="duration_subdetail">&nbsp<span  style="color: #0CD6CF;">  • </span>Mint's TOPIA with every trade.</div>
+					</div>
+				</div>
+				<div class="d-flex justify-content-start" style="margin-top: 34px">
+					<div style="position: relative;margin-right: 21px;margin-top: 0;">
+						<div  class="bullet_outer">
+						</div>
+						<div class="bullet_inner">
+						</div>		
+					</div>
+					<div >
+						<div class="duration_name selected_div" val="0" data-month="fourth">NOVEMBER - DECEMBER 2019</div>
+						<div style="margin-top: 7px">
+							<div class="duration_detail">Blackjack Launch</div>
+							<div class="duration_detail">Roulette Launch</div>
+							<div class="duration_detail">Hi-Lo Launch</div>
+							<div class="duration_detail">Baccarat Launch</div>
+							<div class="duration_detail">3-Card Poker Launch</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-2" style="color: #fff;">
+			<div class="d-flex justify-content-start" style="height: 100%">
+				<div class="demo2" style="padding:80px 0px 40px 0px;">
+					<script>
+						for (var i = 0; i < 35; i++) {
+							if(i==1 | i==9 || i==17 || i==25 || i==33)
+							{
+								text='<div class="longstick selected_div'+i+' val="0"></div>';
+							}
+							else{								
+								text='<div class="smallstick selecteds_div'+i+' val="0"></div>';
+							}
+							$(".demo2").append(text);
+						}
+					</script>
+				</div>
+				<div style="border-right: 2px solid rgba(255,255,255,0.03);padding:80px 0px 40px 0px;width: 2px;height: 100%">
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+<script>
+	$(".selected_div").click(function(){
+		var val = $(this).attr('val');
+		var i=0;
+		var a=0, b=0;
+		var month = $(this).attr('data-month');
+		if(month=='first'){	a=0; b=9;}
+		else if(month=='second'){ a=9; b=17;}
+		else if(month=='third'){ a=17; b=25;}
+		else if(month=='fourth'){ a=25; b=35;}
+
+		if (val==0)
+		{
+  			$(this).css({"color": "#99A2B8"});
+  			for (i = a; i < b; i++) {
+  				$('.selected_div'+i).css({"border": "2px solid #99A2B8","box-shadow":"none"});
+  				$('.selecteds_div'+i).css({"border": "1px solid #99A2B8","box-shadow":"none"});
+  			}
+  			$(this).attr('val', '1');
+  		}
+  		else if(val==1){
+  			$(this).css({"color": "#0CD6CF"});
+  			for (i = a; i < b; i++) {
+  				$('.selected_div'+i).css({"border": "2px solid #0CD6CF","box-shadow":"0px 1px 26px rgba(12, 214, 207, 0.9)"});
+  				$('.selecteds_div'+i).css({"border": "1px solid #0CD6CF","box-shadow":"none"});
+  			}
+  			$(this).attr('val', '0');
+  		}
+	  	
+});
+</script>
+</html>
